@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ade Marketing Limited - Contact Us Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SomeIntegrityHash==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles-ade-mrk-ltd.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/solution.css">
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index2.html"><img src="./images.22/Ade Marketing Limited Logo.png" alt="ademarketingltd logo" height="35"> Ade Marketing Ltd</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>       
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>        
+    </div>
+  </nav>
+
+ <!-- ------Contact------ -->
+    <div id="contact">
+        <div class="contact-container" style="margin-top: 5%;">
+            <div class="container my-5">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <h1 class="sub-titles-2">Contact Us</h1>
+                    <p class="lead mb-4"><i class="fa-solid fa-paper-plane"></i>ademarketingltd@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>    
+                    </div>
+                    <a href="images.22/Ade Marketing Ltd Support.FAQ.PDF Document.pdf" class="btn btn-outline-warning btn-lg px-4" style="margin-top: 25px;">Download Support/FAQ Page</a>
+                </form>
+                <input type="hidden" name="access_key" value="e41da3d0-0c1e-4d6e-9b77-d21d9ef088b5"> <!-- Added in here -->
+                
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-right" style="text-align: center;">
+                      <div class="contact-right">
+                          <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required>
+                          <input type="email" name="Email" placeholder="Your Email" class="contact-inputs" required>
+                          <textarea name="Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                          <button 
+                          type="submit" value="Submit" class="btn btn-outline-warning btn-lg px-4">Submit 
+                          </button>
+                      </div>
+                    </form>
+
+                    <!-- </div> <div class="col-sm-6"> <label for="lastName" class="form-label">Last name</label> 
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required> 
+                    <div class="invalid-feedback">
+                    Valid last name is required.
+                    </div> </div> -->
+
+                    <script> 
+                    document.getElementById("contact").addEventListener("submit", function(event){
+                        event.preventDefault();
+                        alert("We appreciate your message! A member of our team will reach out shortly to assist you.")
+                    });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p class="text-body-secondary"> Copyright © 2025 <br> Ade Marketing Ltd. <br> All Rights Reserved. <br> United Kingdom</p>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index2.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"></script>
+
+</body>
+</html>

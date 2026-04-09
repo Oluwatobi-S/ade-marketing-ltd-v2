@@ -1,0 +1,894 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', sans-serif;
+    box-sizing: border-box; /* Added something here */
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Added in here */    
+}
+
+body{
+    background-size: cover; /* Added in here */
+    background-repeat: no-repeat; /* Added in here */
+    background-position: center;
+    box-sizing: border-box;
+    background: #080808;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.menu-bar{
+    background: goldenrod;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%; /* Added something here */
+    display: inline-flex;
+    z-index: 1000; /* Added something here */
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1); /* Added in here */
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.menu-bar ul li {
+    text-decoration: none;
+    width: 250px;
+    margin: 5px; /* Added in here */
+    padding: 15px;
+    font-weight: bold; /* Added something here */
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu-bar ul li:hover{
+    background-color: gold;
+    border-radius: 5px;
+}
+
+.menu-bar .fa{
+    margin-right: 10px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+/* Added in here */
+.sub-menu-1.show {
+    display: block;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: goldenrod;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 5px;
+}
+
+/* Logo Section - Main Page */
+.logo{
+    width: 270px;
+    padding: 15px;
+    margin-top: 20%;
+    margin-right: 200%;
+    border-radius: 30px;
+}
+
+/* Text Section - Main Page */
+.header-text{
+    margin-left: 150px;
+    margin-right: 10px;
+    font-size: 3.75rem; /* Added in here */
+    text-align: center;
+    padding-left: 30px;
+    margin-bottom: 500px;
+    margin-top: 10px;
+}
+
+.header-text p{
+    margin-top: -290px; /* Changed here */
+    margin-left: 15%;
+    padding-left: 30px;
+}
+
+.header-text h1{
+    font-size: 2.5rem; /* Added  in here */
+    margin-top: 30px;
+    margin-left: 15%;
+    padding-left: 30px;
+}
+
+.active-menu #nav-menu{
+    display: flex;
+}
+
+/*---------about---------*/
+#about-us{
+    padding: 10px 10px;
+    color: lightgray;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.row{
+    justify-content: space-between;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+    margin-right: 20px;
+}
+
+.about-col-1 img{
+    width: 110%;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+.btn.btn3{
+    display: none;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+    margin-left: 50px;
+}
+
+.about-col-2 p{
+    margin-bottom: 20px;
+}
+
+
+.sub-titles{
+    font-size: 2.25rem; /* Added in here */
+    font-weight: 530;
+    color: white;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+
+.tab-link{
+    margin-right: 50px;
+    font-size: 1.125rem; /* Added in here */
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.tab-link.active-link::after{
+    width: 100%;
+}
+
+/*---------history---------*/
+#history{
+    padding: 30px 30px;
+    color: white;
+    margin: 30px 20px;
+}
+
+.about-col-3{
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 50%; /* Added in here */
+}
+
+.about-col-3 img{
+    width: 40%;
+    border-radius: 15px;
+    margin-right: 120px;
+}
+
+
+.history-section p strong{
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+.history-title h2{
+    font-weight: 600; /* Added in here */
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/*---------contact---------*/                         
+.contact-inputs{
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+}
+
+.contact-inputs:focus{
+    border: 4px solid goldenrod;
+}
+
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left {
+    margin-top: 20px;
+    flex-basis: 35%;
+    margin-left: 5%;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: goldenrod;
+    margin-right: 15px;
+    font-size: 1.563rem; /* Added in here */
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 1.875rem; /* Added in here */
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.sub-titles-2{
+    font-size: 2rem; /* Added in here */
+    font-weight: 600;
+    color: white;
+}
+
+.social-icons a:hover{
+    color: goldenrod;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    background: goldenrod;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.063rem; /* Added in here */
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.btn.btn2:hover{
+    background-color: #262626;
+}
+
+.contact-left form{
+    width: 200%;
+}
+
+form input, form textarea{
+    width: 90%; /* Added in here */
+    border: 1px solid #ccc;
+    outline: none;
+    background: black;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 1.125rem; /* Added in here */
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 1.125rem; /* Added in here */ 
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.logo img{
+    width: 140px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: opacity 0.3s;
+}
+
+.logo img:hover{
+    opacity: 0.9;
+}
+
+/*---------pricing---------*/
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 70px;
+    min-height: 100vh; /* Added in here */
+}
+
+.wrapper .card{
+    max-width: 340px;
+    background-color: #262626;
+    padding: 40px;
+    margin: 30px 15px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
+    3px 3px 10px -1px rgba(255,255,255,0.7);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* For Active Class */
+.wrapper .card.active{
+    background-color: goldenrod;
+    transform: scale(1, 1.09);
+}
+
+.wrapper .card h3{
+    margin-bottom: 15px;
+}
+
+/* For Active Class */
+.wrapper .card.active h3{
+    color:  rgba(255,255,255,1);
+}
+
+.wrapper .card h1{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 2.5rem; /* Added in here */
+}
+
+/* For Active Class */
+.wrapper .card.active h1{
+    color: black;
+}
+
+.wrapper .card h1 span{
+    font-size: 1rem; /* Added in here */ 
+    color: white;
+}
+
+/* For Active Class */
+.wrapper .card.active h1 span{
+    color: black;
+}
+
+.wrapper .card p{
+    margin: 20px 0;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+/* For Active Class */
+.wrapper .card.active p{
+    color: black;
+}
+
+.wrapper .card ul{
+    list-style: none;
+}
+
+.wrapper .card ul li{
+    line-height: 3;
+}
+
+/* For Active Class */
+.wrapper .card.active h1{
+    color: black;
+}
+
+.wrapper .card ul li i{
+    margin-right: 10px;
+}
+
+/* For Active Class */
+.wrapper .card.active li i{
+    color: black;
+}
+
+.wrapper .card.active li{
+    color: black;
+}
+
+.wrapper .card.active {
+    color: black;
+}
+
+.wrapper .card a{
+    margin: 20px 0;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    padding: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+/* For Active Class */
+.wrapper .card.active a{
+    background-color: white;
+    color:  rgba(0,0,0,0.8);
+    border: 1px solid black; /* Added in here */
+}
+
+.wrapper .card a:hover{
+    background-color: goldenrod;
+    color: black;
+}
+
+/* For Active Class */
+.wrapper .card.active a:hover{
+    border: 1px solid black;
+}
+
+.card .label{
+    position: absolute;
+    margin-top: -2px;
+    margin-left: 53%;
+    transform: translateX(-50%);
+    background-color: #262626;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.063rem; /* Added in here */
+    font-weight: bold;
+}
+
+.checkbox-option{
+    line-height: 1;
+}
+
+/*---------services---------*/
+#what-we-offer{
+    padding: 25px 30px;
+    color: white;
+    text-align: left;
+}
+
+.about-col-4{
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    flex-basis: 50%; /* Added in here */
+}
+
+.about-col-4 img{
+    width: 35%;
+    border-radius: 15px;
+    margin-right: 60px;
+    margin-top: 30px;
+    float: right; /* Added here */
+}
+
+.btn.btn4{
+    display: none;
+}
+
+.services-section h2{
+    font-size: 2rem; /* Added in here */
+}
+
+/*---------bookings---------*/
+.booking-inputs{
+    border: none; /* Added in here */ 
+    outline: none;
+    font-weight: 500;
+}
+
+.booking-inputs:focus{
+    border: 4px solid goldenrod; /* Added in here */ 
+}
+
+.booking-inputs::placeholder{
+    color: #a9a9a9; /* Added in here */ 
+}
+
+.booking-section{
+    background-color: goldenrod;
+    padding: 30px;
+    margin-top: 30%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.booking-section h2{
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem; /* Added in here */
+    font-weight: 600;
+    color: white;
+}
+
+.booking-content{
+    display: flex;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.booking-info{
+    background-color: black;
+    border-radius: 10px;
+    padding: 45px;
+    color: white;
+    flex: 1;
+    margin-right: 10px;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.booking-divider{
+    width: 1px;
+    background-color: black;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.booking-form{
+    flex: 1;
+    background: var(--bs-body-tertiary-bg);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;   
+    margin-left: 100px;
+}
+
+.booking-form label{
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.booking-form input, .booking-form textarea{
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.booking-section h3{
+    margin-top: 5px;
+}
+
+.booking-section p{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.booking-form button{
+    background: goldenrod;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem; /* Added in here */
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.booking-form button:hover{
+    background-color: #262626;
+}
+
+
+/* Addded in here */
+.img-alt-1, .img-alt-2, .img-alt-3{
+    display: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------*/
+
+/* Side Menu (For Smaller Screens) */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 10px;
+    height: 100vh;
+    width: 250px;
+    z-index: 1001;
+    background-color: goldenrod;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar ul li{
+    text-decoration: none;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    font-weight: bold; /* Added something here */
+    width: 100%;
+    list-style: none;
+    margin-left: 28px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, .sidebar ul li:hover{
+    background-color: gold;
+    border-radius: 5px;
+}
+
+
+/* Menu Icons (Menu Toggle & Menu Close) */
+.menu-icons{
+    display: none;
+}
+
+/* Default (Desktop/Large Screens) */
+.menu-toggle, .close-menu{
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Added here [30 px - .header-text]..... [60px - .header-text h1] */
+/*---------CSS for small screens (Mobile Devices: 319px — 480px TO Desktops: 1601px and more---------*/
+
+    @media (min-width: 320px) and (max-width: 1500px){
+        .wrapper, .wrapper .card{
+          flex-direction: column;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-content: center;
+          display: flex;
+          text-align: center;
+        }
+
+        .booking-content{
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .booking-info, .booking-form{
+            margin: 10px 0;
+            max-width: 100%;
+        }
+
+        .booking-form{
+            margin-left: 0;
+        }
+
+        .about-col-1 img, .about-col-3 img, .about-col-4 img{
+            display: none;
+        }
+
+        .contact-inputs{
+            width: 80vw;
+        }
+
+        .menu-bar ul{
+            list-style: none;
+            color: black;
+        }
+
+        nav .fas{
+            display: none;
+        }
+
+        @media(max-width: 800px){
+            .hideOnMobile{
+            display: none;
+            }
+        }
+
+        #what-we-offer{
+            margin-top: 20%;
+            flex-direction: column;
+          align-items: center;
+        }
+
+        
+    }
+
+/*         
+
+.img-alt-1 /* Crown Img - History Section {
+            display: block;
+            margin-bottom: 30px;
+            margin-left: 65%;
+            margin-right: 415px;
+        }
+
+        .img-alt-2 /* Level Up Chart Img - What We Offer Section {
+            display: block;
+            margin-bottom: 30px;
+            margin-left: 65%;
+            margin-right: 415px;
+        }
+
+        .img-alt-3 /* Organisation Img - About Us Section {
+            display: block;
+            margin-bottom: -390px;
+            margin-left: 350px;
+            margin-right: 415px; 
+        } 
+        
+*/
+
+/*------------------------------------------------------------------------------------------------------------*/
+    /* Small screen devices
+    @media (max-width: 576px){
+        .logo{
+            max-width: 120px;
+            height: auto;
+        }
+
+        .header-text h1{
+            font-size: 1.75rem; 
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            display: flex;
+            text-align: center;
+        }
+
+        .header-text p{
+            font-size: 1.2rem; 
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            display: flex;
+            text-align: center;
+        }
+    }
+
+    /* Medium screens - Tablets */
+    @media (min-width: 577px) and (max-width: 991px){
+        .logo{
+            max-width: 160px;
+            height: auto;
+        }
+
+        .header-text h1{
+            font-size: 2.25rem;
+            text-align: center;
+        }
+
+        .header-text p{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+
+    }
+
+    /* Large screens - Desktops */
+    @media (min-width: 992px){
+        .logo{
+            max-width: 200px;
+            height: auto;
+        }
+
+        .header-text h1{
+            font-size: 2.75rem;
+            text-align: center;
+        }
+
+        .header-text p{
+            font-size: 2rem;
+            text-align: center;
+        }
+
+    }
+
+/* --------------------------------------------------------------------------------------------------------------------*/
+
+/* 
+<!-- Images replacements for History, What We Offer, About Us section --> */
+    
+/*  
+    .img-alt-1 Crown Img - History Section {
+        display: block;
+        margin-bottom: 30px;
+        margin-left: 65%;
+        margin-right: 415px;
+    }
+
+    .img-alt-2 Level Up Chart Img - What We Offer Section {
+        display: block;
+        margin-bottom: 30px;
+        margin-left: 65%;
+        margin-right: 415px;
+    }
+
+    .img-alt-3 Organisation Img - About Us Section {
+        display: block;
+        margin-bottom: -390px;
+        margin-left: 350px;
+        margin-right: 415px;
+        } 
+
+*/
