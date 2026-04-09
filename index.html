@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ade Marketing Limited - Official Website</title>
+    <style>
+        body {
+            font-family: 'Montserrat Classic', Calibri;
+            scroll-behavior: smooth;
+        }
+        .header-text {
+            color: white;
+            padding: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles-ade-mrk-ltd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <!-- Added in here - Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SomeIntegrityHash==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Added in here - Font Awesome CDN -->
+</head>
+
+<body>
+
+    <!-- ------Main menu------ -->
+
+        <div class="sidebar">
+        <nav>
+
+            <ul id="sidemenu">
+                <!-- Icon container at the TOP -->
+                <div class="menu-icons">
+                    <i class="fa-solid fa-xmark close-menu" onclick="closemenu()"></i>
+                    <i class="fa-solid fa-ellipsis menu-toggle" onclick="openmenu()"></i>
+                </div>
+            
+
+                <!-- Main Menu Items -->
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#what-we-offer"><i class="fa-solid fa-list" style="margin-right: 8px;"></i>What We Offer</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#pricing-plans"><i class="fa-solid fa-money-bill-wave" style="margin-right: 8px;"></i>Pricing</a></li>
+                        </ul>
+                        <div>
+                            <li><a href="#booking"><i class="fa-solid fa-pen-to-square" style="margin-right: 8px;"></i>Booking</a></li>
+                            <li><a href="#about-us"><i class="fa-solid fa-users" style="margin-right: 8px;"></i>About Us</a></li>
+                            <li><a href="#history"><i class="fa-solid fa-timeline" style="margin-right: 8px;"></i>History</a></li>
+                            <li><a href="#contact"><i class="fa-solid fa-phone" style="margin-right: 8px;"></i>Contact</a></li>
+                        </div>    
+                    </div>
+                </li>
+        </nav>
+    </div>
+
+
+
+    <div class="menu-bar">
+        <nav>
+
+            <ul id="sidemenu">
+                <!-- Icon container at the TOP -->
+                <div class="menu-icons">
+                    <i class="fa-solid fa-xmark close-menu" onclick="closemenu()"></i>
+                    <i class="fa-solid fa-ellipsis menu-toggle" onclick="openmenu()"></i>
+                </div>  
+            
+
+                <!-- Main Menu Items -->
+                <li class="hideOnMobile"><a href="#what-we-offer"><i class="fa-solid fa-list" style="margin-right: 8px;"></i>What We Offer</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#pricing-plans"><i class="fa-solid fa-money-bill-wave" style="margin-right: 8px;"></i>Pricing</a></li>
+                        </ul>
+                        <div>
+                            <li class="hideOnMobile"><a href="#booking"><i class="fa-solid fa-pen-to-square" style="margin-right: 8px;"></i>Booking</a></li>
+                            <li class="hideOnMobile"><a href="#about-us"><i class="fa-solid fa-users" style="margin-right: 8px;"></i>About Us</a></li>
+                            <li class="hideOnMobile"><a href="#history"><i class="fa-solid fa-timeline" style="margin-right: 8px;"></i>History</a></li>
+                            <li class="hideOnMobile"><a href="#contact"><i class="fa-solid fa-phone" style="margin-right: 8px;"></i>Contact</a></li>
+                            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                        </div>    
+                    </div>
+                </li>
+        </nav>
+    </div>
+
+
+    <div>
+        <div class="header-text">
+            <div>
+                <div>
+                    <img src="images.22/Ade-Marketing-LTD-Logo.jpeg" alt="Ade Marketing Limited Logo" class="logo">
+                </div>
+
+                <p><b>ADE Marketing Ltd.</b></p>
+                <h1>Ade Marketing Ltd - A Company Where<br/>Your Growth Is Our Priority.</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------Pricing------ -->
+    <div id="pricing-plans"></div>
+    <div class="wrapper">
+        <div class="card">
+            <h3>Package 1</h3>
+            <h1> £15 <span>per month</span> </h1>
+            <p>For up and coming businesses seeking to build their social presence online.</p>
+            <ul>
+                <li> <i class="fa-solid fa-square-check"></i> Social Media Management </li>
+                <li> <i class="fa-solid fa-square-check"></i> Brand Development </li>
+                <li> <i class="fa-solid fa-square-check"></i> Digital Marketing </li>
+            </ul>
+            <a href="Pricing Pakages Page 1.html">Choose Plan</a>
+        </div>
+
+        <div class="card active">
+            <div class="label">Most Popular!</div>
+            <h3>Package 2</h3>
+            <h1> £20 <span>per month</span> </h1>
+            <p>For up and coming businesses seeking to build their brand online.</p>
+            <ul>
+                <li> <i class="fa-solid fa-square-check"></i> Social Media Management </li>
+                <li> <i class="fa-solid fa-square-check"></i> Brand Development </li>
+                <li> <i class="fa-solid fa-square-check"></i> Digital Marketing </li>
+                <li> <i class="fa-solid fa-square-check"></i> Content Creation </li>
+            </ul>
+            <a href="Pricing Pakages Page 2.html">Choose Plan</a>
+        </div>
+
+        <div class="card">
+            <h3>Package 3</h3>
+            <h1> £25 <span>per month</span> </h1>
+            <p>For up and coming businesses seeking to build their digital marketing and upscale thier content creation.</p>
+            <ul>
+                <li> <i class="fa-solid fa-square-check"></i> Social Media Management</li>
+                <li> <i class="fa-solid fa-square-check"></i> Brand Development</li>
+                <li> <i class="fa-solid fa-square-check"></i> Digital Marketing</li>
+                <li> <i class="fa-solid fa-square-check"></i> Content Creation</li>
+                <li> <i class="fa-solid fa-square-check"></i> Consulting Services</li>
+            </ul>
+            <a href="Pricing Pakages Page 3.html">Choose Plan</a>
+        </div>
+    </div>
+
+
+    <!--     
+    Images replacements for History, What We Offer, About Us section
+    -->
+
+    <!-- 
+        <div id="images-alternative">
+
+        <div class="img-alt-1">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="150px" viewBox="0 -960 960 960" width="150px" fill="#DAA520"><path d="M203-160v-60h554v60H203Zm-1-144-53-334q-5 2-9.5 2.5t-9.5.5q-21 0-35.5-14.5T80-685q0-21 14.5-36t35.5-15q21 0 36 15t15 36q0 8-2.5 16t-7.5 14l148 66 141-194q-14-6-22.5-18.5T429-830q0-21 15-35.5t36-14.5q21 0 36 14.5t15 35.5q0 16-8.5 28.5T500-783l141 194 148-66q-5-6-7.5-14t-2.5-16q0-21 15-36t35-15q21 0 36 15t15 36q0 21-15 35.5T829-635q-5 0-9-1t-9-3l-53 335H202Zm51-60h454l32-203-118 53-141-195-141 195-118-53 32 203Zm227 0Z"/></svg></a>   
+        </div>
+
+        <div class="img-alt-2">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="150px" viewBox="0 -960 960 960" width="150px" fill="#DAA520"><path d="M318-420v-295h90v295l-45-45-45 45Zm194 91v-551h90v461l-90 90ZM124-229v-320h90v230l-90 90Zm-4 111 246-246 149 132 262-262h-88v-60h191v190h-60v-88L517-149 368-280 206-118h-86Z"/></svg></a>
+        </div>
+
+        
+        <div class="img-alt-3">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="150px" viewBox="0 -960 960 960" width="150px" fill="#DAA520"><path d="M0-240v-53q0-38.57 41.5-62.78Q83-380 150.38-380q12.16 0 23.39.5t22.23 2.15q-8 17.35-12 35.17-4 17.81-4 37.18v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-19.86-3.5-37.43T765-377.27q11-1.73 22.17-2.23 11.17-.5 22.83-.5 67.5 0 108.75 23.77T960-293v53H780Zm-480-60h360v-6q0-37-50.5-60.5T480-390q-79 0-129.5 23.5T300-305v5ZM149.57-410q-28.57 0-49.07-20.56Q80-451.13 80-480q0-29 20.56-49.5Q121.13-550 150-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T149.57-410Zm660 0q-28.57 0-49.07-20.56Q740-451.13 740-480q0-29 20.56-49.5Q781.13-550 810-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T809.57-410ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.35-60Q506-540 523-557.35t17-43Q540-626 522.85-643t-42.5-17q-25.35 0-42.85 17.15t-17.5 42.5q0 25.35 17.35 42.85t43 17.5ZM480-300Zm0-300Z"/></svg></a>
+        </div>
+
+        <div class="btn-btn-3" "People Small Icon"> DONE!
+            <a href="#"<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16"><path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg>
+        <div>
+        
+        <div class="btn-btn-4" "Services Small Icon"> DONE!
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"></path></svg></a>
+        </div>
+
+        <div class="btn-btn-5" "History Small Icon"> NOT DONE
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"></path></svg></a>
+        </div>
+        
+    </div> 
+    -->
+    
+    <!---------What We Offer--------->
+    <div id="what-we-offer" class="services-section">
+        <div class="about-col-4">
+            <img src="images.22/Marketing-Agency-05.jpg" alt="Marketing Agency Image (What We Offer Section)">
+        </div>
+
+        <div class="img-alt-2">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="350px" viewBox="0 -960 960 960" width="350px" fill="#DAA520"><path d="M318-420v-295h90v295l-45-45-45 45Zm194 91v-551h90v461l-90 90ZM124-229v-320h90v230l-90 90Zm-4 111 246-246 149 132 262-262h-88v-60h191v190h-60v-88L517-149 368-280 206-118h-86Z"/></svg></a>
+        </div>
+
+        <div class="img-alt-3">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="350px" viewBox="0 -960 960 960" width="350px" fill="#DAA520">
+                    <path 
+                    d="M0-240v-53q0-38.57 41.5-62.78Q83-380 150.38-380q12.16 0 23.39.5t22.23 2.15q-8 17.35-12 35.17-4 17.81-4 37.18v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-19.86-3.5-37.43T765-377.27q11-1.73 22.17-2.23 11.17-.5 22.83-.5 67.5 0 108.75 23.77T960-293v53H780Zm-480-60h360v-6q0-37-50.5-60.5T480-390q-79 0-129.5 23.5T300-305v5ZM149.57-410q-28.57 0-49.07-20.56Q80-451.13 80-480q0-29 20.56-49.5Q121.13-550 150-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T149.57-410Zm660 0q-28.57 0-49.07-20.56Q740-451.13 740-480q0-29 20.56-49.5Q781.13-550 810-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T809.57-410ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.35-60Q506-540 523-557.35t17-43Q540-626 522.85-643t-42.5-17q-25.35 0-42.85 17.15t-17.5 42.5q0 25.35 17.35 42.85t43 17.5ZM480-300Zm0-300Z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="container">
+            <h2>What We Offer</h2>
+            <p>At Ade Marketing Ltd, we provide a comprehensive range of services tailored to meet the unique needs of black-owned <br/> businesses.</p>
+            <br/> 
+            <p>Our goal is to empower these businesses to thrive and achieve lasting success through innovative and effective marketing <br/> strategies.</p>
+            <br/>
+            <br/> <!-- Added here -->
+            <br/> <!-- Added here -->
+            <br/> <!-- Added here -->
+            <p>Here is a list of all the services that we offer: </p>
+            <br/>
+            <br/> <!-- Added here -->
+            <ul>
+                <li>Brand Development - We help you build a strong, recognizable brand that resonates with your target audience.</li>
+                <li>Digital Marketing - Our digital marketing services are designed to increase your online visibility and drive growth. </li>
+                <li>Social Media Management - We manage your social media presence to engage your audience and build a loyal community. </li>
+                <li>Content Creation - High-quality content is key to connecting with your audience.  </li>
+                <li>Strategy and Consulting - We provide expert advice and strategic guidance to help you navigate the digital landscape.  </li>
+                <li>Innovation and Trends - We aim to actively stay ahead of the curve by embracing the latest marketing trends and technologies. </li>
+                <li>Community and Collaboration - We believe in the power of community and collaboration. </li>
+            </ul>
+        </div>
+    </div>
+
+    <!---------Bookings--------->
+    <section id="booking" class="booking-section">
+        <h2>Book a Consultation Today</h2>
+        <div class="booking-content">
+            <div class="booking-info">
+                <h3>Consultation Call</h3>
+                <p>At Ade Marketing Ltd, our consultation calls are designed to provide you with a comprehensive overview
+                of how our services can meet your specific marketing needs. During the 30-minute call, our experienced
+                marketing consultants will discuss your business goals, target audience, and current marketing strategies. <br/> <br/>
+                We will evaluate your brand's strengths and identify areas for improvement, offering tailored advice and solutions
+                to help you achieve your objectives. This consultation is a valuable opportunity to gain insights into the
+                latest marketing trends and best practices, ensuring your business stays ahead of the competition.
+                When you book a consultation call with us, you can expect a personalized and engaging conversation that
+                focuses on your unique challenges and how Ade Marketing Ltd can support your growth.</p>
+                    
+                <br/> 
+            
+                <h3>What to Expect</h3>
+                <p>Upon booking your consultation call, you will receive a confirmation email with all the necessary details,
+                including the date, time, and a link to join the call. During our conversation, we will start by understanding
+                your business's history and vision. Our consultants will then delve into your current marketing efforts, <br/>
+                analyzing what's working and what might need adjustment. Whether you're looking to boost your online presence,
+                enhance your brand identity, or develop a robust marketing strategy, we are here to provide expert guidance
+                tailored to your needs.</p>
+
+            </div>
+
+            <!--  
+            <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="Email" placeholder="Your Email" class="contact-inputs" required> 
+            -->
+
+            <form class="booking-form">
+            <table>
+            <tr>
+                <td> <label for="name">Full Name:</label> </td>
+                <td> <input type="text" id="name" name="name" placeholder="Your Full Name" required class="booking-inputs"> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="email">Email Address</label> </td>
+                <td> <input type="email" id="email" name="email" placeholder="Your Email" required class="booking-inputs"> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="phone">Phone Number:</label> </td>
+                <td> <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required class="booking-inputs"> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="date">Preffered Date:</label> </td>
+                <td> <input type="date" id="date" name="date" required class="booking-inputs"> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="time">Preffered Time:</label> </td>
+                <td> <input type="time" id="time" name="time" required class="booking-inputs"> </td>
+            </tr>
+
+            <tr>
+               <td> <label for="message">Additional Information:</label> </td>
+               <td> <textarea id="message" name="message" rows="4" class="booking-inputs"></textarea> </td>
+            </tr>
+            </table>
+
+            <button 
+            type="submit" value="Submit" id="Book-Now-Btn">Book Now
+            </button>
+
+            <!-- Added in here -->
+            <img src="images.22/Image for Booking Section for Ade Marketing Ltd Website.png" alt="Book Now Image for Booking Section">
+            <!-- Added in here -->
+
+            </form>
+
+            <script>
+            document.getElementById("booking").addEventListener("submit", function(event){
+                event.preventDefault();
+                alert("Booking complete ✅ Your consultation slot is secured — we’ll contact you shortly.")
+            });
+            </script>
+        </div>
+    </section>
+
+    <!-- 
+    <div id="what-we-offer" class="services-section">
+            <div class="about-col-4"> -->
+
+    <!---------About Us--------->
+    <div id="about-us" class="about-us-section">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images.22/Futuristic-Marketing-Agency-Background-Image.jpeg" alt="Futuristic Background Image">
+            </div>
+
+            <div class="img-alt-3">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="350px" viewBox="0 -960 960 960" width="350px" fill="#DAA520">
+                        <path 
+                        d="M0-240v-53q0-38.57 41.5-62.78Q83-380 150.38-380q12.16 0 23.39.5t22.23 2.15q-8 17.35-12 35.17-4 17.81-4 37.18v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-19.86-3.5-37.43T765-377.27q11-1.73 22.17-2.23 11.17-.5 22.83-.5 67.5 0 108.75 23.77T960-293v53H780Zm-480-60h360v-6q0-37-50.5-60.5T480-390q-79 0-129.5 23.5T300-305v5ZM149.57-410q-28.57 0-49.07-20.56Q80-451.13 80-480q0-29 20.56-49.5Q121.13-550 150-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T149.57-410Zm660 0q-28.57 0-49.07-20.56Q740-451.13 740-480q0-29 20.56-49.5Q781.13-550 810-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T809.57-410ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.35-60Q506-540 523-557.35t17-43Q540-626 522.85-643t-42.5-17q-25.35 0-42.85 17.15t-17.5 42.5q0 25.35 17.35 42.85t43 17.5ZM480-300Zm0-300Z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-titles">About Us</h1>
+                <p>
+                Ade Marketing Ltd is dedicated to empowering and supporting up-and-coming black businesses in the UK. We understand <br/> the unique challenges that black entrepreneurs face, and we are committed to providing tailored marketing solutions that <br/> help these businesses thrive and succeed.
+                </p>
+                <br/>
+                <p>
+                Our team of experienced professionals offers a wide range of services, including brand development, digital marketing, <br/> social media management, and content creation. We work closely with our clients to understand their goals and develop <br/> strategies that deliver measurable results.
+                </p>
+                <br/>
+                <p>
+                At Ade Marketing Ltd, we believe in the power of community and collaboration. Our mission is to elevate black-owned <br/> businesses, helping them to reach their full potential and make a lasting impact in their industries.
+                </p>
+            </div>
+        </div>    
+    </div>
+
+    <!---------History--------->
+    <div id="history" class="history-section">
+        <div class="about-col-3">
+            <img src="images.22/Marketing-Agency (1).jpg" alt="Futuristic Background Image">
+        </div>
+
+        <div class="img-alt-1">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="350px" viewBox="0 -960 960 960" width="350px" fill="#DAA520"><path d="M203-160v-60h554v60H203Zm-1-144-53-334q-5 2-9.5 2.5t-9.5.5q-21 0-35.5-14.5T80-685q0-21 14.5-36t35.5-15q21 0 36 15t15 36q0 8-2.5 16t-7.5 14l148 66 141-194q-14-6-22.5-18.5T429-830q0-21 15-35.5t36-14.5q21 0 36 14.5t15 35.5q0 16-8.5 28.5T500-783l141 194 148-66q-5-6-7.5-14t-2.5-16q0-21 15-36t35-15q21 0 36 15t15 36q0 21-15 35.5T829-635q-5 0-9-1t-9-3l-53 335H202Zm51-60h454l32-203-118 53-141-195-141 195-118-53 32 203Zm227 0Z"/></svg></a>   
+        </div>
+
+            <div class="container">
+                <h2>Our History</h2>
+                <p>Samuel Aderoyeje started his journey through his desire to see his peers acheive greatness. This desire led him to <br/> encourage the people around him into their untapped potential. <br/> He first started by advising his peers on social media platforms with techniques to further promote their project <br/> and that then progressed to the entrepreneurs trusting Sam with their whole social media pages. Sam would then <br/> create campaigns through innovative ideas, starting new trends and leading the marketing in whatever direction <br/> he chooses </p>
+                <p>From the tender age of 17, Sam has been working with numerous musicians and various clothing brands with the <br/> same goal in mind. Growth! Sam's passion to see what people can do when the opportunity arises has pushed him <br/> to create Ade Marketing LTD as he continues to put his all into seeing the best out of all that he works with. <br/> Providing new opportunities and breaking glass ceilings. </p>
+                <p>Since our inception, we have been on a steady growth trajectory. Driven by a passion for empowering black <br/> businesses and a commitment to delivering exceptional results, we have built a solid reputation within the <br/> community. Our initial focus was on building strong relationships and offering personalized consulting services to <br/> help businesses navigate the digital landscape.</p>
+                <p>Ade Means Crown</p>
+                    <nav>
+                        <a href="index-ade-mrk-ltd.html" class="logo">
+                            <img src="images.22/Ade-Marketing-LTD-Logo.jpeg" alt="Ade Marketing Limited Logo">
+                        </a>
+                    </nav>
+            </div>  
+        </div>
+    </div>
+  
+    <!-- ------Contact------ -->
+    <div id="contact">
+        <div class="contact-container">
+            <div class="row">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <h1 class="sub-titles-2">Contact Us</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ademarketingltd@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>    
+                    </div>
+                    <a href="images.22/Ade Marketing Ltd Support.FAQ.PDF Document.pdf" download class="btn btn2">Download Support/FAQ Page</a>
+                </form>
+                <input type="hidden" name="access_key" value="e41da3d0-0c1e-4d6e-9b77-d21d9ef088b5"> <!-- Added in here -->
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required>
+                        <input type="email" name="Email" placeholder="Your Email" class="contact-inputs" required>
+                        <textarea name="Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button 
+                        type="submit" class="btn btn2" id="Submit-Btn">Submit 
+                        </button>
+                    </form>
+                    <script> 
+                    document.getElementById("contact").addEventListener("submit", function(event){
+                        event.preventDefault();
+                        alert("We appreciate your message! A member of our team will reach out shortly to assist you.")
+                    });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2024 Ade Marketing Ltd. All Rights Reserved.  |  United Kingdom</p>
+        </div>
+    </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+</html>
